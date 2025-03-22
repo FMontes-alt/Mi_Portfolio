@@ -12,14 +12,14 @@ Inspirado en superficies limpias, estructuras metálicas y vidrios traslúcidos.
 
 ### 🎨 Paleta de Colores
 
-| Nombre               | HEX        | Uso principal                            |
-|----------------------|------------|------------------------------------------|
-| **Gris Acero Oscuro**| `#1f2937`  | Fondo base (body, header, footer)        |
-| **Gris Perla**       | `#e5e7eb`  | Texto secundario / detalles              |
-| **Blanco Niebla**    | `#f9fafb`  | Fondo de secciones / contenido destacado |
-| **Azul Cristal**     | `#60a5fa`  | Botones, links y acentos visuales        |
-| **Azul Nocturno**    | `#1e3a8a`  | Títulos y sombreado de bloques           |
-| **Sombra Vidrio**    | `rgba(255,255,255,0.06)` | Transparencias / Glassmorphism |
+| Nombre                | HEX        | Uso principal                            |
+|-----------------------|------------|------------------------------------------|
+| **Fondo Base**        | `#0d0d0d`  | Fondo general del sitio                  |
+| **Oscuro Neón**       | `#c1fc36`  | Botones, enlaces, íconos llamativos      |
+| **Fondo Secundario**  | `#1a1a1a`  | Secciones internas, tarjetas             |
+| **Acento Aqua**       | `#00ffc3`  | Detalles interactivos, hover, subrayado  |
+| **Destacado Lima**    | `#bfff00`  | Llamadas a la acción (CTA), títulos      |
+| **Texto Principal**   | `#f2f2f2`  | Texto en general, accesible y claro      |
 
 ---
 
