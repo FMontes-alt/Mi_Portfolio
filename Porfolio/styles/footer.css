@@ -1,0 +1,38 @@
+@import url('style.css');
+/* Importa las variables del root */
+
+footer {
+    background-color: var(--color-claro);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--color-destacado);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+    font-size: 0.95rem;
+
+    p {
+        margin-bottom: 1rem;
+        color: var(--color-texto);
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+        display: inline-block;
+        transition: transform 0.3s ease, filter 0.3s ease;
+
+        img {
+            width: 28px;
+            height: 28px;
+            filter: drop-shadow(0 0 4px var(--color-acento));
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 6px var(--color-destacado));
+        }
+    }
+}

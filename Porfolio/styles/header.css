@@ -1,0 +1,74 @@
+@import url('style.css');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* Importa las variables del root */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-claro);
+    border-bottom: 2px solid var(--color-destacado);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Orbitron', sans-serif;
+    z-index: 10;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.hide-header {
+    transform: translateY(-100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 0 6px var(--color-acento), 0 0 12px var(--color-acento);
+}
+
+.language {
+    margin-right: 1.5rem;
+    color: #000;
+    text-shadow: 0 0 4px var(--color-acento);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li a {
+        color: #000;
+        font-weight: 600;
+        text-decoration: none;
+        text-shadow: 0 0 4px var(--color-acento);
+        transition: text-shadow 0.3s ease;
+
+        &:hover {
+            text-shadow: 0 0 8px var(--color-destacado), 0 0 14px var(--color-acento);
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+    /*No me da mas tiempo a implementar mas cosas*/
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #000;
+    text-shadow: 0 0 4px var(--color-acento);
+}

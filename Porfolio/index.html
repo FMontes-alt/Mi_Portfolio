@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="js/claro-oscuro.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/proyect3d.js" defer></script>
+    <script src="js/header-scroll.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mi Portfolio</div>
+            <a href="" class="language">EN</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Presentación -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy Francisco José Montes Belloso</h1>
+                <p>Desarrollador web apasionado por la creación de experiencias digitales únicas.</p>
+                <a href="projects.html" class="btn-glass">Explora mis proyectos</a>
+            </div>
+            <div class="hero-img">
+                <img src="assets/images/fotoPerfil.jpg" alt="Imagen de presentación">
+            </div>
+        </section>
+
+        <!-- Sección de Formación y Experiencia -->
+        <section class="education">
+            <h2>Formación</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                    <p>Centro Educativo Ilerna-Sevilla | 2023 - 2025</p>
+                    <p>Especializado en programación web, bases de datos y diseño de interfaces.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Certificaciones y Formación Complementaria</h3>
+                    <ul>
+                        <li>Desarrollo Web con HTML5 y CSS3 – Formación Profesional DAW (2023 - 2025)</li>
+                        <li>Diseño Responsive y Mobile-First – Aplicado en desarrollo de portafolio personal</li>
+                        <li>Arquitectura de estilos con SCSS – Proyecto web personal (2025)</li>
+                        <li>Programación en Java orientada a objetos – Formación DAW + desarrollo de videojuego</li>
+                        <li>Desarrollo de interfaces gráficas con Java Swing – Proyecto académico (ProyectoInfierno)
+                        </li>
+                        <li>Introducción a Git y GitHub – Gestión de versiones en entorno de desarrollo real</li>
+                        <li>Modelado y consulta de bases de datos con MySQL – Formación DAW + práctica en proyectos</li>
+                        <li>Optimización SEO técnica básica – Aplicado en sitio web personal</li>
+                        <li>Automatización y scripting básico en Bash – Prácticas en entorno Linux (VM)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section class="skills">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="assets/icons/html.svg" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/css.svg" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/java.svg" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/javascript.svg" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/logoGithub.svg" alt="Git y GitHub">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section class="projects">
+            <h2>Proyectos Destacados</h2>
+            <div class="portfolio-grid" id="project-orbit">
+                <div class="portfolio-item">
+                    <img src="assets/images/Castillo.gif" alt="Proyecto 1">
+                    <h3>Proyect Inferno</h3>
+                    <p>Juego realizado por GSD.</p>
+                    <a href="https://github.com/FMontes-alt/GSD.git" class="btn-sfere">Ver más</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/bookTrack.jpeg" alt="Proyecto 2">
+                    <h3>Sistema de reservas</h3>
+                    <p>Creación de gestor de libros.</p>
+                    <a href="https://github.com/FMontes-alt/BookTrack-New" class="btn-sfere">Ver más</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/Space.png" alt="Proyecto 3" class="item-3">
+                    <h3>Shop Space X</h3>
+                    <p>Página destinada al ecodiséño</p>
+                    <a href="projects.html#blog" class="btn-sfere">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section class="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Francisco es un gran profesional, entregó mi proyecto a tiempo y con una calidad excelente."</p>
+                    <h4>- Cliente XYZ</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Muy atento a los detalles y con gran capacidad de resolución de problemas."</p>
+                    <h4>- Compañero de equipo</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Francisco José Montes Belloso. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/FMontes-alt" target="_blank">
+                <img src="assets/icons/logoGithub.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/francisco-jos%C3%A9-montes-belloso-82a246350/" target="_blank">
+                <img src="assets/icons/logoLinkelin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/franmontes95/"><img src="assets/icons/logoinstagram.svg"
+                    alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
