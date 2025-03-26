@@ -1,0 +1,103 @@
+@import url('style.css');
+
+.projects-page {
+    padding: 2rem 1rem;
+    margin-top: 80px;
+
+}
+
+.projects-page h1 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--color-oscuro);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.project-flip {
+    width: 280px;
+    height: 360px;
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.flip-inner {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.project-flip:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+}
+
+.flip-front img {
+    width: 90%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 6px var(--color-acento);
+}
+
+.flip-front h2 {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    text-shadow: 0 0 4px var(--color-acento);
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 1.2rem;
+
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.project-flip .btn-sfere {
+    background-color: var(--color-acento);
+    color: var(--color-claro);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-flip .btn-sfere:hover {
+    background-color: var(--color-destacado);
+    color: var(--color-fondo);
+    transform: scale(1.05);
+}

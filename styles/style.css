@@ -7,28 +7,40 @@
     --color-destacado: #D9A07C;     
     --color-texto: #1E1E1E;          */
 
-    --color-fondo: #0d0d0d;           
-    --color-oscuro: #c1fc36;         
-    --color-claro: #1a1a1a;           
-    --color-acento: #00ffc3;          
-    --color-destacado: #bfff00;      
+
+    /* Paleta modo oscuro */
+    --color-fondo: #0d0d0d;
+    --color-oscuro: #c1fc36;
+    --color-claro: #1a1a1a;
+    --color-acento: #00ffc3;
+    --color-destacado: #bfff00;
     --color-texto: #f2f2f2;
 
 }
 
+body.light-theme {
+    --color-fondo: #f4f4f6;
+    --color-oscuro: #333333;
+    --color-claro: #ffffff;
+    --color-acento: #0077cc;
+    --color-destacado: #ff6600;
+    --color-texto: #1a1a1a;
+
+    background-color: var(--color-fondo);
+}
 
 /* Reset básico para eliminar margenes y paddings predeterminados */
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     background-color: black;
-    background-image: url(../assets/images/bd.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }

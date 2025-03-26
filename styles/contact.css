@@ -1,0 +1,86 @@
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 255, 195, 0.3);
+    padding: 2rem 1rem;
+    margin: 100px 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--color-texto);
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.2);
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 1.5rem;
+    color: var(--color-oscuro);
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    color: var(--color-texto);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-acento);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(0, 255, 195, 0.2);
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-texto);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid var(--color-acento);
+    box-shadow: 0 0 6px var(--color-acento);
+}
+
+.contact-form button {
+    background-color: rgba(0, 255, 195, 0.2);
+    border: 1px solid var(--color-acento);
+    color: var(--color-texto);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--color-destacado);
+    color: #000;
+    border-color: var(--color-destacado);
+    box-shadow: 0 0 10px var(--color-destacado);
+}
+
+.contact-alt {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--color-texto);
+}
+
+.contact-alt a {
+    color: var(--color-acento);
+    text-decoration: underline;
+}

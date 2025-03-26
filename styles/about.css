@@ -1,0 +1,82 @@
+@import url('style.css');
+
+main {
+    color: var(--color-claro);
+    padding: 1rem;
+}
+
+.about-intro,
+.about-profesional,
+.about-hobbies,
+.about-personal {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 3.5rem 1rem;
+    margin: 0 0 1.5rem 0;
+    color: var(--color-texto);
+    box-shadow: 0 0 10px rgba(0, 255, 195, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.about-intro {
+    margin-top: 80px;
+}
+
+.about-intro:hover,
+.about-profesional:hover,
+.about-hobbies:hover,
+.about-personal:hover {
+    transform: scale(1.01);
+}
+
+.about-intro h1,
+.about-profesional h2,
+.about-hobbies h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-claro);
+    text-align: center;
+    text-shadow: 0 0 6px var(--color-acento);
+}
+
+/* Bloque final personalizado */
+.about-personal blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-destacado);
+    text-align: center;
+    text-shadow: 0 0 5px var(--color-acento);
+}
+
+.personal-code {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-acento);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: left;
+    overflow-x: auto;
+    max-width: 90%;
+    margin: 0 auto;
+    white-space: pre;
+    box-shadow: 0 0 8px rgba(0, 255, 195, 0.2);
+    border: 1px solid rgba(0, 255, 195, 0.3);
+    animation: codeFadeIn 2s ease;
+}
+
+/* Animación sutil para el bloque de código */
+@keyframes codeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

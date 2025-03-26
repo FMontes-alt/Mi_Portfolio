@@ -61,7 +61,32 @@ header {
 
 .menu-toggle {
     display: none;
-    /*No me da mas tiempo a implementar mas cosas*/
+    cursor: pointer;
+    z-index: 11;
+    width: 30px;
+    height: 24px;
+    position: relative;
+}
+
+.bar {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-oscuro);
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+.menu-toggle .bar:nth-child(1) {
+    top: 0;
+}
+
+.menu-toggle .bar:nth-child(2) {
+    top: 10px;
+}
+
+.menu-toggle .bar:nth-child(3) {
+    bottom: 0;
 }
 
 .theme-toggle {
@@ -71,4 +96,35 @@ header {
     cursor: pointer;
     color: #000;
     text-shadow: 0 0 4px var(--color-acento);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: var(--color-claro);
+        border-top: 1px solid var(--color-destacado);
+        padding: 1rem;
+
+        a{
+            font-size: 1.4rem;
+            color: var(--color-acento);
+            text-shadow:  0 0 6px var(--color-acento);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }

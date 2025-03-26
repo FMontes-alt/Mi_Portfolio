@@ -1,18 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.querySelector(".nav-links");
+document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
 
-    if (mobileMenu) {
-        mobileMenu.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-        });
+    const fondoOscuro = "url('assets/images/bd.jpg')";
+    const fondoClaro = "url('assets/images/bd-light.jpg')";
+
+    function aplicarTemaClaro() {
+        body.classList.add("light-theme");
+        themeToggle.textContent = "🌞";
+        body.style.backgroundImage = fondoClaro;
+        localStorage.setItem("theme", "light");
     }
 
-    if (themeToggle) {
-        themeToggle.addEventListener("click", function () {
-            document.body.classList.toggle("dark-mode");
-            themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-        });
+    function aplicarTemaOscuro() {
+        body.classList.remove("light-theme");
+        themeToggle.textContent = "🌙";
+        body.style.backgroundImage = fondoOscuro;
+        localStorage.setItem("theme", "dark");
     }
+
+    // Al cargar, aplicar el tema guardado
+    if (localStorage.getItem("theme") === "light") {
+        aplicarTemaClaro();
+    } else {
+        aplicarTemaOscuro();
+    }
+
+    // Cambiar tema al pulsar el botón
+    themeToggle.addEventListener("click", () => {
+        if (body.classList.contains("light-theme")) {
+            aplicarTemaOscuro();
+        } else {
+            aplicarTemaClaro();
+        }
+    });
 });

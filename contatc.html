@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Porfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="js/header-scroll.js" defer></script>
+    <script src="js/claro-oscuro.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mi Portfolio</div>
+            <a href="#" class="language">EN</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Hablemos</h1>
+            <p>¿Tienes alguna idea o proyecto en mente? ¡Me encantaría escucharte!</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+
+                <button type="submit" class="btn-glass">Enviar mensaje</button>
+            </form>
+
+            <div class="contact-alt">
+                <p>También puedes escribirme a: <a href="mailto:franmontes95@gmail.com">franmontes95@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Francisco José Montes Belloso. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/FMontes-alt" target="_blank">
+                <img src="assets/icons/logoGithub.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/francisco-jos%C3%A9-montes-belloso-82a246350/" target="_blank">
+                <img src="assets/icons/logoLinkelin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/franmontes95/">
+                <img src="assets/icons/logoinstagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
