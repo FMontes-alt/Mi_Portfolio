@@ -7,7 +7,7 @@ Aquí encontrarás una muestra de mis proyectos, habilidades y estilo como desar
 
 ## 🌐 Accede al portafolio online
 
-📎 **[Haz clic aquí para verlo en vivo](https://fmontes-alt.github.io/Mi_Portfolio/i)**  
+📎 **[Haz clic aquí para verlo en vivo] (https://fmontes-alt.github.io/Mi_Portfolio/i)**  
 ¡Explora, curiosea y no te cortes en dejar feedback!
 
 ---
