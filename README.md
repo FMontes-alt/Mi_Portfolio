@@ -23,7 +23,7 @@ Aquí encontrarás una muestra de mis proyectos, habilidades y estilo como desar
 ---
 
 ## 📁 Estructura del proyecto
-Mi_Portfolio/
+Mi_Portfolio
 ├── index.html
 ├── css/
 │ └── estilos.css
